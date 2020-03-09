@@ -1,5 +1,5 @@
 import scala.io._ //_  包的所有内容 ctr + b 查看包快捷键
-
+import util.control.Breaks._
 object HelloScala {
 
   def main(args: Array[String]): Unit = {
@@ -50,7 +50,49 @@ object HelloScala {
 
     print(numi)
 
-    val name = StdIn.readLine()
+   // val name = StdIn.readLine()
+
+    //没有switch使用模式匹配
+
+    for(i <- 1 to 3) {
+      println("hello")
+    }
+
+    var list = List(20, "he")
+    for (i <- list if i!=20) //循环首位 没有break和continue
+      println(i)
+
+    //嵌套循环
+    for (i<- 1 to 3 ; j <- 1 to 3) {
+      println(i+"," + j)
+    }
+
+    val res = for (i <- 1 to 10)
+      yield {
+        if (i%2==0) {
+          i
+        } else {
+          "不是偶数"
+        }
+      }
+
+    println(res)
+
+
+    //嵌套循环
+    for (i<- Range(1,10,2)) {
+      println(i)
+      if(i==2) {
+        break()
+
+      }
+
+      //breakable() breakable{} //可以接收函数的的函数
+    }
+
+    //有while循环 但不建议使用
+
+    //纯函数
   }
 
   def sayHello: Nothing = {
