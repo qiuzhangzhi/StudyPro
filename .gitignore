@@ -2,3 +2,16 @@
 */.idea/*
 */target/*
 mapreduce/output/*
+sparkdemo/*
+hdfssample/*
+mapreduce/*
+MultiOutDemo/*
+mybatis/*
+bitmap/*
+hbase/*
+flink-1study/*
+flink-study/*
+flink-study2/*
+flink-study3/*
+flink-test/*
+

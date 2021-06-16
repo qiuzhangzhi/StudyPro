@@ -27,7 +27,7 @@ object HelloScala {
     //float精度小数点后7位
 
     var char1:Char = 97
-    print(char1)
+    println(char1)
 
     //当把一个计算结果赋值给一个变量，则编译器会进行类型转换及判断（即会看范围和类型）
     //当把一个字面量赋值给一个变量，则编译器只进行范围判断
@@ -38,35 +38,37 @@ object HelloScala {
     var dog:Dog = null
 
     "hello".take(1)
-    "hello".takeRight(1)
+    println("hello".takeRight(1))
 
-   // var num:Int = 1.2.toInt
-    //关键字要用反引号标示
 
-    //睡觉学生项目经理
 
-    //scala不支持三目运算符 用if-else实现
-    val numi = if (2 > 3) 1 else  5
-
-    print(numi)
-
-   // val name = StdIn.readLine()
-
-    //没有switch使用模式匹配
-
-    for(i <- 1 to 3) {
-      println("hello")
-    }
-
-    var list = List(20, "he")
-    for (i <- list if i!=20) //循环首位 没有break和continue
-      println(i)
-
-    //嵌套循环
-    for (i<- 1 to 3 ; j <- 1 to 3) {
-      println(i+"," + j)
-    }
-
+//   // var num:Int = 1.2.toInt
+//    //关键字要用反引号标示
+//
+//    //睡觉学生项目经理
+//
+//    //scala不支持三目运算符 用if-else实现
+//    val numi = if (2 > 3) 1 else  5
+//
+//    print(numi)
+//
+//   // val name = StdIn.readLine()
+//
+//    //没有switch使用模式匹配
+//
+//    for(i <- 1 to 3) {
+//      println("hello")
+//    }
+//
+//    var list = List(20, "he")
+//    for (i <- list if i!=20) //循环守卫 没有break和continue
+//      println(i)
+//
+//    //嵌套循环
+//    for (i<- 1 to 3 ; j <- 1 to 3) {
+//      println(i+"," + j)
+//    }
+//
     val res = for (i <- 1 to 10)
       yield {
         if (i%2==0) {
@@ -77,18 +79,18 @@ object HelloScala {
       }
 
     println(res)
-
-
-    //嵌套循环
-    for (i<- Range(1,10,2)) {
-      println(i)
-      if(i==2) {
-        break()
-
-      }
-
-      //breakable() breakable{} //可以接收函数的的函数
-    }
+//
+//
+//    //嵌套循环
+//    for (i<- Range(1,10,2)) {
+//      println(i)
+//      if(i==2) {
+//        break()
+//
+//      }
+//
+//      //breakable() breakable{} //可以接收函数的的函数
+//    }
 
     //有while循环 但不建议使用
 

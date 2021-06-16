@@ -1,0 +1,4 @@
+@Person
+public class RepeatableTest {
+
+}
